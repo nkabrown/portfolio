@@ -1,13 +1,14 @@
 /*
- *= require_tree .
  *= require_self
  */
 
 // Variables
 
 // Vendors
+@import "bourbon";
 @import "font-awesome";
 
 // Stylesheets
 @import "main";
 @import "home";
+@import "about";
