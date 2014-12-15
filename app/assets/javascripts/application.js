@@ -17,8 +17,13 @@
 
 $(document).ready(function() {
 
-  $("#nav-icon").on("click", function() {
-    $(".overlay").show();
+  $("button").on("click", function() {
+    $("button").toggleClass("close");
+    if ( $(this).hasClass("close")) {
+     $(".overlay").show();
+    } else {
+      $(".overlay").hide();
+    }
   });
 
 });

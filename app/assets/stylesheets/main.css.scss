@@ -1,7 +1,99 @@
-#nav-icon {
+button {
+  display: inline-block;
   position: absolute;
   top: 15px;
   right: 15px;
+  margin: 0 1em;
+  border: none;
+  background: none;
+}
+
+.lines-button {
+  display: inline-block;
+  padding: 2rem 1rem;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.57143rem;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    transition: 0;
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+@mixin line {
+  display: inline-block;
+  width: 64px;
+  height: 9.141px;
+  background: #333;
+  border-radius: 0.28571rem;
+  transition: .3s;
+}
+
+.lines {
+
+  // create middle line
+  @include line;
+  position: relative;
+
+  /* create the upper and lower lines as pseudo-elements of the middle line */
+  &:before, &:after {
+    @include  line;
+    position: absolute;
+    left: 0;
+    content: '';
+    transform-origin: 0.28571rem center;
+
+  }
+  &:before { top: 1rem; }
+  &:after { top: -1rem; }
+}
+
+.lines-button:hover {
+
+  .lines {
+    &:before { top: 1.14286rem; }
+    &:after { top: -1.14286rem; }
+  }
+}
+
+.lines-button:focus {
+  outline: none;
+}
+
+.lines-button:active {
+  outline: none;
+}
+
+.lines-button.x.close .lines {
+
+  /* hide the middle line */
+  background: none;
+
+  /* overlay the lines by setting both their top values to 0 */
+  &:before, &:after {
+    transform-origin: 50% 50%;
+    top: 0;
+    width: 3.5rem;
+  }
+
+  /* rotate the lines to form the x shape */
+  &:before {
+    z-index: 2500;
+    background: #FFF;
+    transform: rotate3d(0,0,1,45deg);
+  }
+
+  &:after {
+    z-index: 2500;
+    background: #FFF;
+    transform: rotate3d(0,0,1,-45deg);
+  }
 }
 
 nav.overlay {
@@ -17,7 +109,9 @@ nav.overlay {
 
 nav ul {
   list-style: none;
-  position: absolute;
+  margin: 0;
+  padding: 0;
+  position: relative;
   width: 100%;
   top: 50%;
   left: 50%;
