@@ -22,7 +22,6 @@ button {
 
   &:active {
     transition: 0;
-    background-color: rgba(0, 0, 0, 1);
   }
 }
 
@@ -120,11 +119,20 @@ nav ul {
 
 nav ul li {
   font-family: "Karla", sans-serif;
-  font-size: 4em;
+  font-size: 5em;
   color: #FFF;
 
   &:hover {
     background-color: #FFF;
+    color: rgba(95, 165, 238, 0.9);
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF;
+
+  &:hover {
     color: rgba(95, 165, 238, 0.9);
   }
 }
