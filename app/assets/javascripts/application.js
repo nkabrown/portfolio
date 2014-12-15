@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+
+  $("#nav-icon").on("click", function() {
+    $(".overlay").show();
+  });
+
+});
