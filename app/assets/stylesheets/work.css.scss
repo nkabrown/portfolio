@@ -1,23 +1,111 @@
-.work-wrapper { 
+body {
+  background-color: #FFF;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.intro {
+  background-color: #FFF;
   width: 100%;
   margin: 0 auto;
-  font-size: 1em;
   text-align: center;
-  margin-top: 200px;
+  font-family: "Born", serif;
+
+  h1 {
+    padding: 2em;
+  }
 }
 
-.col-6 {
-  font-family: "Karla", sans-serif;
-  width: 33%;
+.project {
+  height: 600px;
 }
 
-.col-6 left {
-  float: left;
-  width: 45%;
-  margin-top: 200px;
-}
-
-.col-6 right {
+.project:nth-child(odd) .text {
   float: right;
-  width: 45%;
+  width: 50%;
+}
+
+.project:nth-child(odd) .media {
+  float: left;
+  width: 50%;
+}
+
+.project:nth-child(even) .text {
+  float: left;
+  width: 50%;
+}
+
+.project:nth-child(even) .media {
+  float: right;
+  width: 50%;
+}
+
+.project .text {
+  background: #FFF;
+  height: 100%;
+
+  .content {
+    padding: 0 4em 4em 4em;
+  }
+
+  .title {
+    text-decoration: underline;
+    font-family: "Karla", sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-family: "Born", serif;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "Karla", sans-serif;
+    font-size: 1.2em;
+  }
+
+  p { 
+    font-family: "Karla", sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 17px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(95, 165, 238, 0.9);
+  }
+  
+  li {
+    list-style: none;
+    font-family: "Karla", sans-serif;
+  }
+
+  .timeline {
+    margin-left: 40px;
+    margin-bottom: 0.7em;
+
+  }
+
+  .project-links {
+    margin: 40px 0;
+  }
+}
+
+.project .media {
+  background-color: #231C22;
+  color: #FFF;
+
+  figure {
+    padding: 0 4em 4em 4em;
+  }
+
+  figcaption {
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    padding-bottom: 28.5px;
+  }
 }
