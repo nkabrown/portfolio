@@ -11,7 +11,7 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  font-family: "Born", serif;
+  font-family: "bornregular", serif;
 
   h1 {
     padding: 2em;
@@ -52,24 +52,24 @@ body {
 
   .title {
     text-decoration: underline;
-    font-family: "Karla", sans-serif;
+    font-family: "karlaregular", sans-serif;
     font-size: 0.8em;
     font-weight: 600;
   }
 
   h1 {
-    font-family: "Born", serif;
+    font-family: "bornregular", serif;
     font-size: 2em;
     text-align: center;
   }
 
   h2 {
-    font-family: "Karla", sans-serif;
+    font-family: "karlaregular", sans-serif;
     font-size: 1.2em;
   }
 
   p { 
-    font-family: "Karla", sans-serif;
+    font-family: "karlaregular", sans-serif;
     font-size: 0.8em;
     margin-bottom: 17px;
   }
@@ -81,7 +81,7 @@ body {
   
   li {
     list-style: none;
-    font-family: "Karla", sans-serif;
+    font-family: "karlaregular", sans-serif;
   }
 
   .timeline {
@@ -105,7 +105,7 @@ body {
 
   figcaption {
     text-align: center;
-    font-family: "Karla", sans-serif;
+    font-family: "karlaregular", sans-serif;
     padding-bottom: 28.5px;
   }
 }
