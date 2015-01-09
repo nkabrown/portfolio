@@ -8,19 +8,40 @@ header {
   text-align: center;
   height: 100vh;
   padding: 60px 0 100px 0;
+
+  h1 {
+    font-family: "bornregular", "Helvetica", serif;
+    font-size: 7em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-family: "karlaregular", sans-serif;
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  p {
+    margin: 0.3em;
+    font-family: "karlaregular", sans-serif;
+    font-size: 0.8em;
+    color: #333;
+  }
+
+  a {
+    color: rgb(1, 165, 248);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(1, 83, 248);
+    text-decoration: none;
+  }
 }
 
-header h1 {
-  font-family: "bornregular", "Helvetica", serif;
-  font-size: 7em;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-header h2 {
-  font-family: "karlaregular", sans-serif;
-  font-size: 1.5em;
-  color: #333;
+.wip-alert {
+  margin-top: 3em;
 }
 
 @media all and (max-width: 600px) {
