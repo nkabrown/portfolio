@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require transition
+//= require zoom
 //= require_tree .
 
 $(document).ready(function() {
